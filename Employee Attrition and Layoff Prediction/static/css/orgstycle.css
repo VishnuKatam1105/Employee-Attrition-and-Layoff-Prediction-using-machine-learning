@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../bb1.avif'); /* Your background image */
+    background-size: cover; /* Cover the whole background */
+    background-position: center; /* Center the image */
+    margin: 0;
+    padding: 20px 20px 0; /* Remove bottom padding to bring form closer to the top */
+    color: #ffffff; /* Light text color */
+}
+
+form {
+    max-width: 900px;
+    margin: 1cm auto; /* Margin at the top to position it 1cm down */
+    background: rgba(30, 30, 30, 0.9); /* Darker background for the form with slight transparency */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Slightly darker shadow */
+    padding: 20px;
+}
+
+.options-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.options-section div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff; /* Light color for labels */
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #444; /* Darker border */
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #333; /* Dark background for inputs */
+    color: #ffffff; /* Light text color for inputs */
+}
+
+input:focus, select:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    .options-section {
+        grid-template-columns: 1fr; /* Stack on small screens */
+    }
+}
